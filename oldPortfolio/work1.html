@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="newStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Product Details</h1>
+        <div class="wrapper animated bounceInLeft">
+          <div class="contact"> 
+            <h3 class="contact-us">Product</h3>
+            <div class="alert">Your message has been sent!</div>
+            <form id="contactForm">
+              <p class="name-field">
+                <label>Product Name <span>*</span></label>
+                <input type="text" name="name" id="name" required>
+              </p>
+              <p class="company-field">
+                <label>Product Company</label>
+                <input type="text" name="company" id="company">
+              </p>
+              <p class="phone-field">
+                <label>Serial Number <span>*</span></label>
+                <input type="text" name="phone" id="phone">
+              </p>
+              <p class="email-field">
+                <label>Email for refrence <span>*</span></label>
+                <input type="email" name="email" id="email" required>
+              </p>
+              
+              <p class="message-field full">
+                <label>Description</label>
+                <textarea name="message" rows="5" id="message"></textarea>
+              </p>
+              <p class="required-field">Required field <span>*</span></p>
+              <p class="submit-button">
+                <button type="submit">Submit</button>
+                <button onclick="gotooutput()">Output</button>
+              </p>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="newScript.js" type="module"></script>
+    <script>
+      function gotooutput(){
+        window.location.href = "output.html";
+      }
+    </script>
+</body>
+</html>
